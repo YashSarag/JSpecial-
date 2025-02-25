@@ -1,0 +1,152 @@
+@font-face {
+    font-family: MyFont;
+    src: url(./MyFont.ttf);
+}
+
+@font-face {
+    font-family: MyFont2;
+    src: url(./Myfont2.ttf);
+}
+
+@font-face {
+    font-family: MyFont3;
+    src: url(./MyFont3.ttf);
+}
+
+#wrapper{
+    background: linear-gradient(135deg, #dfe9f3, #a6c1ee);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.main-img{
+    background: white;
+    width: 400px;
+    animation:  5s 0s infinite friendship ease-in;
+}
+
+@keyframes friendship {
+    0%{
+        box-shadow: 0 0 5px 2px rgb(52, 51, 51);
+    }
+    50%{
+        transform: scale(1.1);
+        box-shadow: 0 0 0;
+        filter: grayscale(1);
+    }
+    100%{
+        box-shadow: 0 0 5px 2px rgb(52, 51, 51);
+    }
+}
+
+.circle{
+    width: 20px;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    animation:  5s 0s infinite circle;
+}
+
+@keyframes circle {
+    50%{
+        left:12px;
+        bottom: 20px;
+    }
+}
+
+.zigzag{
+    width: 35px;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    animation:  5s 0s infinite zigzag ease-in;
+}
+
+@keyframes zigzag {
+    50%{
+        top:3%;
+        left:-7%
+    }
+}
+
+.plus{
+    width: 25px;
+    position: absolute;
+    top: 5px;
+    left:45%;
+    animation:  5s 0s infinite plus ease-in;
+}
+
+@keyframes plus {
+    50%{
+        top: -5%;
+        left: 50%;
+    }
+}
+
+.cube{
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: -3%;
+    animation:  3s 0s infinite cube linear;
+}
+
+@keyframes cube {
+    50%{
+        transform: translateY(-15px) rotateY(180deg);
+        top: -px;
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+.football{
+    width: 35px;
+    position: absolute;
+    bottom: -25px;
+    right: 5px;
+    animation:  5s 0s infinite football linear;
+}
+
+@keyframes football {
+    50%{   
+        bottom: 30px;
+    }
+}
+
+
+.shadow{
+    width: 50px;
+    position: absolute;
+    bottom: -45px;
+    right: 3px;
+    background: none;
+    animation:  5s 0s infinite shadow linear;
+}
+
+@keyframes shadow {
+    0%{
+        opacity: 0.3;
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+@media(max-width:400px){
+    .heading{
+        font-size: 30px;
+        text-align: left;
+    }
+    .dash{
+        margin-left: 0;
+    }
+
+}
